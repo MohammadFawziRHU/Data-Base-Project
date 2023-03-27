@@ -55,6 +55,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timerTime = new System.Windows.Forms.Timer(this.components);
+            this.PanelControls = new System.Windows.Forms.Panel();
             this.panelLeft.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,7 +78,7 @@
             this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelLeft.Location = new System.Drawing.Point(0, 0);
             this.panelLeft.Name = "panelLeft";
-            this.panelLeft.Size = new System.Drawing.Size(218, 720);
+            this.panelLeft.Size = new System.Drawing.Size(218, 496);
             this.panelLeft.TabIndex = 0;
             // 
             // btnSettings
@@ -241,7 +242,7 @@
             this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(38, 102);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 22);
+            this.label3.Size = new System.Drawing.Size(118, 18);
             this.label3.TabIndex = 3;
             this.label3.Text = "Lebanon Beirut";
             // 
@@ -252,9 +253,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(28, 71);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 22);
+            this.label2.Size = new System.Drawing.Size(116, 18);
             this.label2.TabIndex = 3;
-            this.label2.Text = "North Books Shop";
+            this.label2.Text = "RHU BookShop";
             // 
             // pictureBox1
             // 
@@ -273,7 +274,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(218, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(982, 62);
+            this.panel2.Size = new System.Drawing.Size(518, 62);
             this.panel2.TabIndex = 1;
             // 
             // button9
@@ -285,7 +286,7 @@
             this.button9.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button9.ForeColor = System.Drawing.Color.White;
             this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.Location = new System.Drawing.Point(919, 0);
+            this.button9.Location = new System.Drawing.Point(455, 0);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(63, 62);
             this.button9.TabIndex = 4;
@@ -299,9 +300,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.label4.Location = new System.Drawing.Point(6, 15);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(343, 46);
+            this.label4.Size = new System.Drawing.Size(170, 38);
             this.label4.TabIndex = 3;
-            this.label4.Text = "North Books Shop,NLI Markit Beirut\r\n\r\n";
+            this.label4.Text = "RHU BookShop, Beirut\r\n\r\n";
             // 
             // panel4
             // 
@@ -314,7 +315,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(218, 62);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(982, 114);
+            this.panel4.Size = new System.Drawing.Size(518, 114);
             this.panel4.TabIndex = 2;
             // 
             // labelTime
@@ -323,9 +324,9 @@
             this.labelTime.AutoSize = true;
             this.labelTime.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.labelTime.ForeColor = System.Drawing.Color.White;
-            this.labelTime.Location = new System.Drawing.Point(807, 55);
+            this.labelTime.Location = new System.Drawing.Point(343, 55);
             this.labelTime.Name = "labelTime";
-            this.labelTime.Size = new System.Drawing.Size(106, 23);
+            this.labelTime.Size = new System.Drawing.Size(83, 19);
             this.labelTime.TabIndex = 4;
             this.labelTime.Text = "HH:MM:SS";
             this.labelTime.Click += new System.EventHandler(this.labelTime_Click);
@@ -337,7 +338,7 @@
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(180, 55);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 23);
+            this.label6.Size = new System.Drawing.Size(62, 19);
             this.label6.TabIndex = 3;
             this.label6.Text = "Admin";
             // 
@@ -348,7 +349,7 @@
             this.label7.ForeColor = System.Drawing.Color.White;
             this.label7.Location = new System.Drawing.Point(115, 55);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(59, 23);
+            this.label7.Size = new System.Drawing.Size(46, 19);
             this.label7.TabIndex = 2;
             this.label7.Text = "Role:";
             // 
@@ -359,9 +360,10 @@
             this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(180, 21);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(176, 23);
+            this.label5.Size = new System.Drawing.Size(40, 19);
             this.label5.TabIndex = 1;
-            this.label5.Text = "Mohammd Fawzi";
+            this.label5.Text = "user";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label1
             // 
@@ -370,7 +372,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(64, 21);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 23);
+            this.label1.Size = new System.Drawing.Size(87, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -383,11 +385,21 @@
             // 
             this.timerTime.Tick += new System.EventHandler(this.timerTime_Tick);
             // 
+            // PanelControls
+            // 
+            this.PanelControls.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PanelControls.Location = new System.Drawing.Point(218, 176);
+            this.PanelControls.Name = "PanelControls";
+            this.PanelControls.Size = new System.Drawing.Size(518, 320);
+            this.PanelControls.TabIndex = 3;
+            this.PanelControls.Paint += new System.Windows.Forms.PaintEventHandler(this.PanelControls_Paint);
+            // 
             // Form_DashBoard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1200, 720);
+            this.ClientSize = new System.Drawing.Size(736, 496);
+            this.Controls.Add(this.PanelControls);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelLeft);
@@ -396,6 +408,7 @@
             this.Name = "Form_DashBoard";
             this.Text = "Form_DashBoard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Form_DashBoard_Load);
             this.panelLeft.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
@@ -435,5 +448,6 @@
         private Label labelTime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timerTime;
+        private Panel PanelControls;
     }
 }

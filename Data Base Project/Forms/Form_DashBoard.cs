@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Data_Base_Project.usercontrol;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,10 +33,18 @@ namespace Data_Base_Project.Forms
         {
 
         }
-
+        private  void AddControlsToPanel(Control C)
+        {
+            C.Dock= DockStyle.Fill;
+            PanelControls.Controls.Clear();
+            PanelControls.Controls.Add(C);
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-       moveSidePanel(btnHome);     
+       moveSidePanel(btnHome);
+            AddControlsToPanel(btnHome);
+            UC_Home uch = new UC_Home();
+            AddControlsToPanel(uch);
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -114,6 +123,21 @@ namespace Data_Base_Project.Forms
         }
 
         private void labelTime_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form_DashBoard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PanelControls_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }
